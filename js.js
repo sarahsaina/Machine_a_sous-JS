@@ -1,3 +1,4 @@
 function machine(){
-    var score = 
+    var credit = document.getElementById("credit").value;
+    var score = document.getElementById("score").value;
 }
