@@ -1,0 +1,3 @@
+function machine(){
+    var score = 
+}
