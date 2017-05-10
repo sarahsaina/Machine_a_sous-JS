@@ -1,44 +1,50 @@
-body{
-	background-image: url(http://www.lostwallpapers.net/wallpaper/wallpaper-fonds-decran-Arriere%20plan%20pour%20site%20web%202.0-FULL-HD.jpg);
+body {
+    background-image: url(http://www.lostwallpapers.net/wallpaper/wallpaper-fonds-decran-Arriere%20plan%20pour%20site%20web%202.0-FULL-HD.jpg);
 }
-h2{
-	color: aliceblue;
-	font-size: 30px;
-}
-p{
-	font-size: 20px;
-	color: red;
-	text-align: center;
-}
-#carre{
-	width: 500px;
-	margin-top: 240px;
-	background-color: 
 
-	}
+h2 {
+    color: aliceblue;
+    font-size: 30px;
+}
 
-#boutonGO{
-	height: 50px;
-	width: 50px;
-	background: aliceblue;
+p {
+    font-size: 20px;
+    color: red;
+    text-align: center;
 }
-#credit{
-	height: 20px;
-	width: 250px;
-	background-color: aliceblue;
+
+#carre {
+    width: 500px;
+    margin-top: 240px;
+    background-color:
 }
-#score{
-	height: 20px;
-	width: 250px;
-	background-color: aliceblue;
+
+#boutonGO {
+    height: 50px;
+    width: 50px;
+    background: aliceblue;
 }
-.jack{
-	margin: auto;
+
+#credit {
+    height: 20px;
+    width: 250px;
+    background-color: aliceblue;
 }
-#grand{
-	margin: auto;
-	width: 700px;
-	height:500px;
-	background: url(images/cartes.jpg)no-repeat;
-	background-size: cover;
+
+#score {
+    height: 20px;
+    width: 250px;
+    background-color: aliceblue;
+}
+
+.jack {
+    margin: auto;
+}
+
+#grand {
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    background: url(images/cartes.jpg)no-repeat;
+    background-size: cover;
 }

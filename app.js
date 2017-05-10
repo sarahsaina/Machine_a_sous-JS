@@ -1,7 +1,19 @@
-var w = {};
-var x = {};
-var y = {};
-var z = {};
+var pique = {
+    chemin: "/images/pique.png",
+    valeur: "1"
+};
+var coeur = {
+    chemin: "/images/coeur.png",
+    valeur: "2"
+};
+var carreau = {
+    chemin: "/images/carreau.png",
+    valeur: "3"
+};
+var trefle = {
+    chemin: "/images/trefle.png",
+    valeur: "4"
+};
 
 $("button[id='boutonGO']").click(function() {
     console.log("Everything is all right")
@@ -10,6 +22,12 @@ $("button[id='boutonGO']").click(function() {
 
 //Fonction 1
 
-//Fonction 2
+/* 
+Fonction 2 : ressemblance();
+La fonction verifie que chaque variable 
+*/
 
 //Petit codage surprise.
+function tchat(){
+    
+}
