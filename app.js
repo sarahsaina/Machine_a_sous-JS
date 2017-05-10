@@ -21,32 +21,21 @@ var trefle = {
     valeur: "4"
 };
 
-function defilement_coeur() {
-
-}
-
-function defilement_pique() {
-
-}
-
-function defilement_carreau() {
-
-}
-
-function defilement_trefle() {
-
-}
-$("button[id='boutonGO']").click(function() {
-    console.log("Everything is all right")
+function magicien(fade, valeur, but){
+        
     $('#img_sous_1').hover(function() {
         // increase the 500 to larger values to lengthen the duration of the fadeout 
         // and/or fadein
-        $('#img_sous_1').fadeOut(500, function() {
+        $('#img_sous_1').fadeOut(fade, function() {
             $('#img_sous_1').attr("src", coeur.chemin);
-            $('#img_sous_1').fadeIn(500);
+            $('#img_sous_1').fadeIn(fade);
         });
-
     });
+    
+}
+
+$("button[id='boutonGO']").click(function() {
+    magicien()
     //Lancer la fonction 1
 });
 
