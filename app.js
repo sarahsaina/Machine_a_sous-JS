@@ -62,6 +62,14 @@ Fonction 1
 Choisir des nombres au hasards
 Selon les nombres, changer l'image grâce au JSON
 */
+function hasard(){
+    do{
+    var w = Math.floor(Math.random()*4);
+    var x= Math.floor(Math.random()*4);
+    var y= Math.floor(Math.random()*4);
+    var z= Math.floor(Math.random()*4);
+    }while(w==0 || x==0 || y==0 || z==0);
+}
 
 /* 
 Fonction 2 : ressemblance();
