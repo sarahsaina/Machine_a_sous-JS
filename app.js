@@ -1,5 +1,5 @@
 var score = 20;
-var hisghscore = 0;
+var hisghscore = 20;
 var name;
 //
 var img1 = {
@@ -53,7 +53,7 @@ function magicien(img, but, fade) {
         if (img.valeur === 5) {
             img.valeur = 1;
         }
-        if (fade < 500) {
+        if (fade < 200) {
             fade = fade * 2;
             magicien(img, but, fade);
         } else {
@@ -91,7 +91,7 @@ function hasard() {
     concorde(w, x, y, z);
     if (score === 0) {
         //Game over
-        $()
+        $("button[id='boutonGO']").attr("disabled", "disabled")
     }
 }
 
