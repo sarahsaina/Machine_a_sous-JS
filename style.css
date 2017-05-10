@@ -26,15 +26,20 @@ h2 {
 }
 
 #credit {
-    height: 20px;
-    width: 250px;
+    height: 100px;
+    width: 100px;
     background-color: aliceblue;
+	text-align: center;
+	float: left;
+
 }
 
 #score {
-    height: 20px;
-    width: 250px;
+    height: 100px;
+    width: 100px;
     background-color: aliceblue;
+	text-align: center;
+	float: right;
 }
 
 .jack {
@@ -47,4 +52,13 @@ h2 {
     height: 500px;
     background: url(images/cartes.jpg)no-repeat;
     background-size: cover;
+}
+.credit{
+	float: left;
+	margin-top:-20px;
+	
+}
+.score{
+	float: right;
+	margin-top: -20px;
 }
