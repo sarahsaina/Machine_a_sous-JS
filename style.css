@@ -63,3 +63,14 @@ h2 {
 	float: right;
 	margin-top: -20px;
 }
+.mach{
+	font-size: 27px;
+	color: red;
+	text-decoration: overline;
+	
+	
+}
+.prop{
+	font-size: 19px;
+	color: aliceblue;
+}
