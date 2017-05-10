@@ -6,10 +6,23 @@ var name;
 
 var valeur = 1;
 
-img1 = "#img_sous_1";
-img2 = "#img_sous_2";
-img3 = "#img_sous_3";
-img4 = "#img_sous_4";
+var img1 = {
+    cible: "#img_sous_1",
+    valeur: "1"
+};
+var img2 = {
+    cible: "#img_sous_2",
+    valeur: "2"
+};
+var img3 = {
+    cible: "#img_sous_3",
+    valeur: "3"
+};
+var img4 = {
+    cible: "#img_sous_4",
+    valeur: "4"
+};
+
 var pique = {
     chemin: "images/pique.png",
     valeur: "1"
@@ -28,30 +41,31 @@ var trefle = {
 };
 
 function magicien(img, but, fade) {
-    $(img).fadeOut(fade, function() {
-        if (valeur === 1) {
-            $(img).attr("src", pique.chemin);
-        } else if (valeur === 2) {
-            $(img).attr("src", coeur.chemin);
-        } else if (valeur === 3) {
-            $(img).attr("src", carreau.chemin);
-        } else if (valeur === 4) {
-            $(img).attr("src", trefle.chemin);
+    $(img.cible).fadeOut(fade, function() {
+        if (img.valeur === 1) {
+            $(img.cible).attr("src", pique.chemin);
+        } else if (img.valeur === 2) {
+            $(img.cible).attr("src", coeur.chemin);
+        } else if (img.valeur === 3) {
+            $(img.cible).attr("src", carreau.chemin);
+        } else if (img.valeur === 4) {
+            $(img.cible).attr("src", trefle.chemin);
         }
     })
-    $('#img_sous_1').fadeIn(fade, function() {
-        valeur++;
-        if (valeur === 5) valeur = 1;
-        console.log(valeur);
+    $(img.cible).fadeIn(fade, function() {
+        img.valeur++;
+        console.log(img.valeur)
+        if (img.valeur === 5) {
+            img.valeur = 1;
+        }
         if (fade < 500) {
-            console.log("fade<500")
-            console.log(valeur === but)
             fade = fade * 2;
             magicien(img, but, fade);
         } else {
-            console.log("valeur != but");
-            console.log(valeur != but);
-            if (valeur != but) magicien(img, but, fade);
+            console.log(img.valeur != but);
+            if (img.valeur != but) {
+                magicien(img, but, fade);
+            }
         }
     });
 }
@@ -68,6 +82,7 @@ Choisir des nombres au hasards
 Selon les nombres, changer l'image grâce au JSON
 */
 function hasard() {
+    score--;
     do {
         var w = Math.floor(Math.random() * 4);
         var x = Math.floor(Math.random() * 4);
@@ -80,6 +95,10 @@ function hasard() {
     magicien(img3, y, 25);
     magicien(img4, z, 25);
 
+    concorde(w, x, y, z);
+    if (score === 0) {
+
+    }
 }
 
 /* 
@@ -87,16 +106,15 @@ Fonction 2 : ressemblance();
 La fonction verifie que chaque variable 
 */
 function concorde(a, b, c, d) {
-    if (a === b && b === c && c === d) { score += 5 }
-	$("#credit").attr("valeur",score);
-	
-	if (valeur > hisghscore){
-		hisghscore=score
-		$("#score").attr("valeur",score);
-		
-	}
-	
-	
+    if (a === b && b === c && c === d) {
+        score += 5;
+    }
+    $("#credit").attr("valeur", score);
+
+    if (valeur > hisghscore) {
+        hisghscore = score
+        $("#score").attr("valeur", score);
+    }
 }
 
 
