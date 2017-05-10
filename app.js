@@ -92,6 +92,7 @@ function hasard() {
     if (score === 0) {
         //Game over
         $("button[id='boutonGO']").attr("disabled", "disabled")
+        $('#Highscore').modal('toggle')
     }
 }
 
