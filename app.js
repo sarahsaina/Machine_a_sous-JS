@@ -58,7 +58,7 @@ function magicien(img, but, fade) {
 
 $("button[id='boutonGO']").click(function() {
     console.log("Everything is all right")
-    magicien(img1, 4, 200);
+    hasard();
     //Lancer la fonction 1
 });
 
@@ -86,9 +86,8 @@ function hasard(){
 Fonction 2 : ressemblance();
 La fonction verifie que chaque variable 
 */
-function concorde(a,b,c,d){
-	if(a===b && b===c && c===d)
-		{score+=5}
+function concorde(a, b, c, d) {
+    if (a === b && b === c && c === d) { score += 5 }
 }
 
 //Petit codage surprise.
