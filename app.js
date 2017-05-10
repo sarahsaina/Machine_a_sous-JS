@@ -90,7 +90,17 @@ La fonction verifie que chaque variable
 */
 function concorde(a, b, c, d) {
     if (a === b && b === c && c === d) { score += 5 }
+	$("#credit").attr("valeur",score);
+	
+	if (valeur > hisghscore){
+		hisghscore=score
+		$("#score").attr("valeur",score);
+		
+	}
+	
+	
 }
+
 
 //Petit codage surprise.
 function tchat() {
