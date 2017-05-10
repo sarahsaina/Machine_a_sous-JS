@@ -4,6 +4,8 @@ var hisghscore = 0;
 
 var name;
 
+var valeur = 1;
+
 var pique = {
     chemin: "images/pique.png",
     valeur: "1"
@@ -21,21 +23,37 @@ var trefle = {
     valeur: "4"
 };
 
-function magicien(fade, valeur, but){
-        
-    $('#img_sous_1').hover(function() {
-        // increase the 500 to larger values to lengthen the duration of the fadeout 
-        // and/or fadein
-        $('#img_sous_1').fadeOut(fade, function() {
+function magicien(but, fade) {
+    $('#img_sous_1').fadeOut(fade, function() {
+        if (valeur === 1) {
+            $('#img_sous_1').attr("src", pique.chemin);
+        } else if (valeur === 2) {
             $('#img_sous_1').attr("src", coeur.chemin);
-            $('#img_sous_1').fadeIn(fade);
-        });
+        } else if (valeur === 3) {
+            $('#img_sous_1').attr("src", carreau.chemin);
+        } else if (valeur === 4) {
+            $('#img_sous_1').attr("src", trefle.chemin);
+        }
+    })
+    $('#img_sous_1').fadeIn(fade, function() {
+        valeur++;
+        if (valeur === 5) valeur = 1;
+        console.log(valeur);
+        if (fade < 1000) {
+            console.log("fade<1000")
+            console.log(valeur === but)
+            fade = fade * 2;
+            magicien(but, fade);
+        } else {
+            console.log("valeur != but");
+            console.log(valeur != but);
+            if (valeur != but) magicien(but, fade);
+        }
     });
-    
 }
-
 $("button[id='boutonGO']").click(function() {
-    magicien()
+    console.log("Everything is all right")
+    magicien(4, 200);
     //Lancer la fonction 1
 });
 
