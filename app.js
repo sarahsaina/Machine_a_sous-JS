@@ -67,6 +67,10 @@ Selon les nombres, changer l'image grâce au JSON
 Fonction 2 : ressemblance();
 La fonction verifie que chaque variable 
 */
+function concorde(a,b,c,d){
+	if(a===b && b===c && c===d)
+		{score+=5}
+}
 
 //Petit codage surprise.
 function tchat() {
