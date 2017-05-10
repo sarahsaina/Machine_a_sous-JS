@@ -43,8 +43,8 @@ function magicien(img, but, fade) {
         valeur++;
         if (valeur === 5) valeur = 1;
         console.log(valeur);
-        if (fade < 1000) {
-            console.log("fade<1000")
+        if (fade < 500) {
+            console.log("fade<500")
             console.log(valeur === but)
             fade = fade * 2;
             magicien(img, but, fade);
