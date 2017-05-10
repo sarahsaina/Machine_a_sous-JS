@@ -19,10 +19,10 @@ p {
     background-color: none;
 }
 
-#boutonGO {
-    height: 50px;
-    width: 50px;
-    background: aliceblue;
+#boutonGO {}
+
+h2 {
+    color: aliceblue !important;
 }
 
 #credit {
