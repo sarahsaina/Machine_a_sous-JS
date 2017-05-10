@@ -1,6 +1,6 @@
 body {
     background-image: url(http://www.lostwallpapers.net/wallpaper/wallpaper-fonds-decran-Arriere%20plan%20pour%20site%20web%202.0-FULL-HD.jpg);
-	font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive !important;
 }
 
 h2 {
@@ -30,17 +30,16 @@ h2 {
     height: 100px;
     width: 100px;
     background-color: aliceblue;
-	text-align: center;
-	float: left;
-
+    text-align: center;
+    float: left;
 }
 
 #score {
     height: 100px;
     width: 100px;
     background-color: aliceblue;
-	text-align: center;
-	float: right;
+    text-align: center;
+    float: right;
 }
 
 .jack {
@@ -54,14 +53,15 @@ h2 {
     background: url(images/cartes.jpg)no-repeat;
     background-size: cover;
 }
-.credit{
-	float: left;
-	margin-top:-20px;
-	
+
+.credit {
+    float: left;
+    margin-top: -20px;
 }
-.score{
-	float: right;
-	margin-top: -20px;
+
+.score {
+    float: right;
+    margin-top: -20px;
 }
 .mach{
 	font-size: 27px;
