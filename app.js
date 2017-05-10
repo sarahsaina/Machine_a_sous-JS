@@ -1,11 +1,7 @@
 var score = 20;
-
 var hisghscore = 0;
-
 var name;
-
-var valeur = 1;
-
+//
 var img1 = {
     cible: "#img_sous_1",
     valeur: "1"
@@ -22,7 +18,7 @@ var img4 = {
     cible: "#img_sous_4",
     valeur: "4"
 };
-
+//
 var pique = {
     chemin: "images/pique.png",
     valeur: "1"
@@ -54,7 +50,6 @@ function magicien(img, but, fade) {
     })
     $(img.cible).fadeIn(fade, function() {
         img.valeur++;
-        console.log(img.valeur)
         if (img.valeur === 5) {
             img.valeur = 1;
         }
@@ -62,7 +57,6 @@ function magicien(img, but, fade) {
             fade = fade * 2;
             magicien(img, but, fade);
         } else {
-            console.log(img.valeur != but);
             if (img.valeur != but) {
                 magicien(img, but, fade);
             }
@@ -71,7 +65,6 @@ function magicien(img, but, fade) {
 }
 
 $("button[id='boutonGO']").click(function() {
-    console.log("Everything is all right")
     hasard();
     //Lancer la fonction 1
 });
@@ -96,9 +89,7 @@ function hasard() {
     magicien(img4, z, 25);
 
     concorde(w, x, y, z);
-    if (score === 0) {
-
-    }
+    if (score === 0) {}
 }
 
 /* 
@@ -109,11 +100,12 @@ function concorde(a, b, c, d) {
     if (a === b && b === c && c === d) {
         score += 5;
     }
-    $("#credit").attr("valeur", score);
-
+    console.log("Everything is all right!")
+    $("#credit").val(score);
+    console.log(score)
     if (valeur > hisghscore) {
         hisghscore = score
-        $("#score").attr("valeur", score);
+        $("#score").val(hisghscore);
     }
 }
 
