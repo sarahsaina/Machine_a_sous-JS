@@ -89,7 +89,10 @@ function hasard() {
     magicien(img4, z, 25);
 
     concorde(w, x, y, z);
-    if (score === 0) {}
+    if (score === 0) {
+        //Game over
+        $()
+    }
 }
 
 /* 
@@ -103,7 +106,7 @@ function concorde(a, b, c, d) {
     console.log("Everything is all right!")
     $("#credit").val(score);
     console.log(score)
-    if (valeur > hisghscore) {
+    if (score > hisghscore) {
         hisghscore = score
         $("#score").val(hisghscore);
     }
