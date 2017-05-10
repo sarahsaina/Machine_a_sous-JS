@@ -79,6 +79,8 @@ function hasard(){
     magicien(img2,x,25);
     magicien(img3,y,25);
     magicien(img4,z,25);
+    
+    concorde(w, x, y, z);
 
 }
 
