@@ -18,7 +18,10 @@ function jeu(){
 	
 	// Le joueur perd 1 crédit à chaque tirage
 	credit -= 1;
+<<<<<<< Updated upstream
 	
+=======
+>>>>>>> Stashed changes
 	
 	// Si les 3 nombres sont égaux, alors on a 3 mêmes images et l'utilisateur gagne 80
 	if(w == x && x == y && y==z){
