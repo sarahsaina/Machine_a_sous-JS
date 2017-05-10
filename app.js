@@ -74,6 +74,12 @@ function hasard(){
     var y= Math.floor(Math.random()*4);
     var z= Math.floor(Math.random()*4);
     }while(w==0 || x==0 || y==0 || z==0);
+    
+    magicien(img1,w,25);
+    magicien(img2,x,25);
+    magicien(img3,y,25);
+    magicien(img4,z,25);
+
 }
 
 /* 
