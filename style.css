@@ -3,7 +3,7 @@ body {
 }
 
 h2 {
-    color: aliceblue;
+    color: aliceblue!important;
     font-size: 30px;
 }
 
