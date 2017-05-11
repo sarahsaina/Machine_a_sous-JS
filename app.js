@@ -125,7 +125,3 @@ function concorde(a, b, c, d) {
     }
 }
 
-//Petit codage surprise.
-function tchat() {
-
-}
