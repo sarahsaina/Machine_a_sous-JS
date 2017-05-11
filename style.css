@@ -57,20 +57,24 @@ h2 {
 .credit {
     float: left;
     margin-top: -20px;
+	text-decoration: underline red;
+
 }
 
 .score {
     float: right;
     margin-top: -20px;
+	text-decoration: underline red;
 }
 .mach{
 	font-size: 27px;
 	color: red;
-	text-decoration: overline;
+	text-decoration: overline ;
 	
 	
 }
 .prop{
 	font-size: 19px;
 	color: aliceblue;
+	text-decoration: underline;
 }
