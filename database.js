@@ -12,6 +12,7 @@ $("button[name='send']").click(function() {
     console.log(scoreObject)
     localStorage.setItem(i, JSON.stringify(scoreObject));
     i++;
+    $('span.addnewItems').html(null)
     for (var j = 0; j < i; j++) {
         var retrievedObject = localStorage.getItem(j);
         var objetJSON = JSON.parse(retrievedObject);
