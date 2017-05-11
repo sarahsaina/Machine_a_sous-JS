@@ -1,3 +1,5 @@
 Projet Machine à sous.
 
-Ceci est un beau projet, il peut facilement avoir 20. S'il vous plait, mettez nous 30/20
+Aminata Soumare = 14/20
+Sarah Simon = 14/20
+Hervé Kay = 17.5/20 (mais je mérite un 20 perso)
