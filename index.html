@@ -74,28 +74,21 @@
                             <thead>
                                 <tr>
                                     <th>Prénom</th>
-                                    <th>Meilleurs Score</th>
+                                    <th>Meilleurs Scores</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <span class="addnewItems">
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </span>
+                                <span class="addnewItems"></span>
                             </tbody>
                         </table>
-                        <form name="tab_score" method="post" action="database.js">
-                            <div class="input-group">
-                                <span class="input-group-addon">@</span>
-                                <input type="text" class="form-control name" placeholder="Username" aria-describedby="basic-addon1">
-                            </div>
-                        </form>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control name" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                        <button name="send" type="submit" class="btn btn-primary" form="tab_score">Envoyer le score</button>
+                        <button name="send" type="button" class="btn btn-primary" form="tab_score">Envoyer le score</button>
                     </div>
                 </div>
             </div>
