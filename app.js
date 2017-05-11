@@ -65,8 +65,12 @@ function magicien(img, but, fade) {
 }
 
 $("button[id='boutonGO']").click(function() {
-    hasard();
-    //Lancer la fonction 1
+    $.deferred.then(function() {
+        $("button[id='boutonGO']").attr("disabled", "disabled")
+        hasard();
+    }).done(function() {
+        $("button[id='boutonGO']").attr("disabled", "none")
+    });
 });
 
 /*
@@ -86,13 +90,21 @@ function hasard() {
     magicien(img1, w, 25);
     magicien(img2, x, 25);
     magicien(img3, y, 25);
-    magicien(img4, z, 25);
+    magicien(img4, z, 25).done(function() {
+        $("button[id='boutonGO']").attr("disabled", "none");
+    });
 
     concorde(w, x, y, z);
     if (score === 0) {
         //Game over
         $("button[id='boutonGO']").attr("disabled", "disabled")
         $('#Highscore').modal('toggle')
+        $("button[placeholder='Username']").click(function() {
+            //Inscrit le nouveau score
+
+            //Ecrit une base de donnée
+        })
+
     }
 }
 
@@ -112,7 +124,6 @@ function concorde(a, b, c, d) {
         $("#score").val(hisghscore);
     }
 }
-
 
 //Petit codage surprise.
 function tchat() {

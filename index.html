@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body>
@@ -71,6 +71,14 @@
 
                             </tbody>
                         </table>
+                        <div class="input-group">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Anuler</button>
+                        <button type="button" class="btn btn-primary">Envoyer le score</button>
                     </div>
                 </div>
             </div>
@@ -80,9 +88,11 @@
         <h2>Pour commencer, cliquez sur "GO !"</h2>
         <div id="grand">
             <br>
-            <DIV class="credit"><p>Crédit: </p><input id="credit" type="text" value="20" disabled="disabled"><br /></DIV>
-        <div class="score"><p>Score:</p><input id="score" type="text" value="20" disabled="disabled">
-           </div>
+            <DIV class="credit">
+                <p>Crédit: </p><input id="credit" type="text" value="20" disabled="disabled"><br /></DIV>
+            <div class="score">
+                <p>Score:</p><input id="score" type="text" value="20" disabled="disabled">
+            </div>
             <div id="carre">
                 <img id="img_sous_1" height="70px" src="images/pique.png" />
                 <img id="img_sous_2" height="70px" src="images/coeur.png" />
@@ -93,8 +103,8 @@
             <button class="btn btn-primary btn-lg" id="boutonGO">GO</button>
         </div>
         <br />
-        
-        
+
+
     </div>
 
     <footer>
@@ -116,6 +126,7 @@
         });
     </script>
     <script src="app.js"></script>
+    <script src="database.js"></script>
 </body>
 
 </html>
